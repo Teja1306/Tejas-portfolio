@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejavinay Govvala - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="complete.css"/>
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container2">
+        <h1 class="heading">MyProgress</h1>
+        <nav class="header">
+            <ul class="list">
+                <i>
+                    <li></i><a href="#Home">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <button onclick="logout()" style="position:fixed; top:10px; right:10px;">Logout</button>
+
+                </i>
+            </ul>
+        </nav>
+    </div>
+    <!-- Home Section -->
+    <section id="Home">
+        <div class="container4">
+            <div class="container3">
+                <h3 class="h3 fade-in">Hello, It's Me</h3>
+                <h1 class="h fade-in">Tejavinay Govvala</h1>
+                <p class="p fade-in">I'm a Front-End Developer</p>
+                <p class="p2 fade-in"><i>
+                    I'm a passionate learner currently excelling in Data Analytics and Power BI.<br>
+                    I have strong Python skills tailored for Data Science applications.<br>
+                    I'm also proficient in HTML and CSS for clean and responsive web design.<br>
+                    With a growing toolkit, I'm eager to solve real-world problems with data-driven solutions.
+                </i></p>
+                <div class="social-icons fade-in">
+                    <a href="https://gmail.google.com" target="_blank" class="icon gmail" title="Gmail">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/Teja1306" target="_blank" class="icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/teja-govvala-1a7a10302/" target="_blank" class="icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="RESUME-TEJA.pdf" target="_blank" class="icon github">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                    <a href="https://www.instagram.com/me_teja0905/" target="_blank" class="icon instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon facebook" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1lJhNgapGdMypuGD0S7ewUO1Cel-4fDDl?usp=drive_link" target="_blank" class="icon drive" title="Google Drive">
+                        <i class="fab fa-google-drive"></i>
+                    </a>
+                </div>
+            </div>
+            <img src="teja4.jpg" class="image fade-in" />
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills">
+        <div class="skills-header">
+            <h1><i>My Expertise</i></h1>
+            <p>Crafting digital solutions with a blend of technical prowess and creative problem-solving</p>
+        </div>
+        
+        <div class="skills-main-container">
+            <!-- Skill Tabs -->
+            <div class="skills-tabs">
+                <div class="skill-tab active" onclick="showSkillCategory('technical')">
+                    <i class="fas fa-code"></i> Technical Skills
+                </div>
+                <div class="skill-tab" onclick="showSkillCategory('python')">
+                    <i class="fab fa-python"></i> Python Ecosystem
+                </div>
+                <div class="skill-tab" onclick="showSkillCategory('microsoft')">
+                    <i class="fab fa-microsoft"></i> Microsoft Suite
+                </div>
+                <div class="skill-tab" onclick="showSkillCategory('soft')">
+                    <i class="fas fa-users"></i> Soft Skills
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div id="technical-skills" class="skills-content active">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5">
+                            </div>
+                            <div class="skill-info">
+                                <h3>HTML5</h3>
+                                <div class="skill-level">Advanced - 85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%;"></div>
+                        </div>
+                        <p class="skill-description">Semantic markup, accessibility, modern HTML5 APIs, and responsive structure design.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png" alt="CSS3">
+                            </div>
+                            <div class="skill-info">
+                                <h3>CSS3</h3>
+                                <div class="skill-level">Advanced - 80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-description">Flexbox, Grid, animations, responsive design, and modern CSS frameworks.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://brandeps.com/logo-download/O/Ottawa-JS-logo-vector-01.svg" alt="JavaScript">
+                            </div>
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <div class="skill-level">Basic - 45%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <p class="skill-description">ES6+, DOM manipulation, async programming, and modern JavaScript frameworks.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>MySQL</h3>
+                                <div class="skill-level">Basic - 55%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 55%;"></div>
+                        </div>
+                        <p class="skill-description">Creating Tables & Acessing the tables doing Aggregate functions and joining the tables.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>MongoDB</h3>
+                                <div class="skill-level">Basic - 55%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 55%;"></div>
+                        </div>
+                        <p class="skill-description">Creating Tables & Acessing the tables.Good at CRUD operations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Skills -->
+            <div id="python-skills" class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Python Programming</h3>
+                                <div class="skill-level">Basic - 50%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 50%;"></div>
+                        </div>
+                        <p class="skill-description">Object-oriented programming, data structures, algorithms, and clean code practices.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/768px-Pandas_logo.svg.png" alt="Pandas">
+                            </div>
+                            <div class="skill-info">
+                                <h3>Pandas</h3>
+                                <div class="skill-level">Advanced - 85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%;"></div>
+                        </div>
+                        <p class="skill-description">Data manipulation, cleaning, transformation, and advanced DataFrame operations.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>NumPy</h3>
+                                <div class="skill-level">Intermediate - 75%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <p class="skill-description">Numerical computing, array operations, and mathematical functions.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-area"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Matplotlib & Seaborn</h3>
+                                <div class="skill-level">Intermediate - 80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-description">Statistical visualization, publication-quality plots, and custom chart designs.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Scikit-learn</h3>
+                                <div class="skill-level">Basic - 50%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 50%;"></div>
+                        </div>
+                        <p class="skill-description">Machine learning algorithms, model evaluation, and predictive analytics.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Data Processing</h3>
+                                <div class="skill-level">Advanced - 85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%;"></div>
+                        </div>
+                        <p class="skill-description">ETL processes, data cleaning, feature engineering, and pipeline automation.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Data Visualization</h3>
+                                <div class="skill-level">Advanced - 85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%;"></div>
+                        </div>
+                        <p class="skill-description">Creating interactive dashboards and compelling data stories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microsoft Skills -->
+            <div id="microsoft-skills" class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-pie" style="color: #D83B01;"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Power BI</h3>
+                                <div class="skill-level">Intermediate - 60%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <p class="skill-description">Interactive dashboards, DAX formulas, data modeling, and business intelligence solutions.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-table" style="color: #107C41;"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Excel</h3>
+                                <div class="skill-level">Intermediate - 65%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <p class="skill-description">Advanced formulas, pivot tables, VBA macros, and financial modeling.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-powerpoint" style="color: #B7472A;"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>PowerPoint</h3>
+                                <div class="skill-level">Intermediate - 75%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <p class="skill-description">Professional presentations, data storytelling, and visual communication.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-word" style="color: #185ABD;"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Word</h3>
+                                <div class="skill-level">Advanced - 80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-description">Document automation, templates, mail merge, and professional formatting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div id="soft-skills" class="skills-content">
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="soft-skill-name">Problem Solving</div>
+                        <div class="soft-skill-desc">Analytical thinking and creative solutions to complex challenges</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="soft-skill-name">Team Collaboration</div>
+                        <div class="soft-skill-desc">Effective teamwork and cross-functional communication</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="soft-skill-name">Communication</div>
+                        <div class="soft-skill-desc">Clear verbal and written communication with stakeholders</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="soft-skill-name">Time Management</div>
+                        <div class="soft-skill-desc">Efficient project planning and deadline management</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="soft-skill-name">Adaptability</div>
+                        <div class="soft-skill-desc">Quick learning and adaptation to new technologies</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="soft-skill-name">Attention to Detail</div>
+                        <div class="soft-skill-desc">Meticulous approach to code quality and data accuracy</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="soft-skill-name">Critical Thinking</div>
+                        <div class="soft-skill-desc">Data-driven decision making and logical analysis</div>
+                    </div>
+
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="soft-skill-name">Initiative</div>
+                        <div class="soft-skill-desc">Proactive approach to learning and project improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <div class="projects-header">
+            <h1>My Projects</h1>
+        </div>
+        <div class="projects-slider">
+            <div class="projects-container" id="projectsContainer">
+                <div class="project-card fade-in">
+                    <h3>Machine Learning & Data Transformation</h3>
+                    <p>Comprehensive data cleaning and transformation project using Pandas library. Implemented various machine learning techniques for data preprocessing, feature engineering, and model optimization.</p>
+                    <a href="https://github.com/Teja1306/Data-cleaning-transformation-using-Pandas" target="_blank" class="project-btn">View Project</a>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <h3>Python Data Science Libraries</h3>
+                    <p>Extensive work with Python libraries including NumPy, Pandas, Seaborn, and Matplotlib for data analysis and visualization. Created interactive dashboards and statistical analysis reports.</p>
+                    <a href="https://github.com/Teja1306" target="_blank" class="project-btn">View Projects</a>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <h3>Hotel Booking Cancellation Analysis</h3>
+                    <p>Power BI project analyzing hotel booking cancellation patterns. <br>Created comprehensive dashboards with interactive visualizations to identify key factors influencing booking cancellations.</br></p>
+                    <a href="https://github.com/Teja1306/Hotel-booking-cancellation" target="_blank" class="project-btn">View Project</a>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <h3>E-Waste Management Website</h3>
+                    <p>Basic responsive website focused on e-waste management and environmental awareness. <br>Built using HTML, CSS, and JavaScript with clean, user-friendly design principles.</br></p>
+                    <a href="https://github.com/Teja1306/E-Waste" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="nav-btn active" onclick="showProject(0)">1</button>
+            <button class="nav-btn" onclick="showProject(1)">2</button>
+            <button class="nav-btn" onclick="showProject(2)">3</button>
+            <button class="nav-btn" onclick="showProject(3)">4</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact">
+        <div class="contact-header">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-main">
+            <!-- About Me Info -->
+            <div class="contact-info">
+                <img src="teja4.jpg" class="contact-image fade-in" />
+                <h2 class="contact-name fade-in">Tejavinay Govvala</h2>
+                <p class="contact-title fade-in">Front-End Developer & Data Analyst</p>
+                <!-- <p class="contact-description fade-in"><i>
+                    I'm a passionate learner currently excelling in Data Analytics and Power BI.<br>
+                    I have strong Python skills tailored for Data Science applications.<br>
+                    I'm also proficient in HTML and CSS for clean and responsive web design.<br>
+                    With a growing toolkit, I'm eager to solve real-world problems with data-driven solutions. -->
+                </i></p>
+                
+                <div class="contact-social fade-in">
+
+                    <a href="mailto:tejavinayteju2004@gmail.com" target="_blank" class="icon gmail" title="Gmail">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/Teja1306" target="_blank" class="icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/teja-govvala-1a7a10302/" target="_blank" class="icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="RESUME-TEJA.pdf" target="_blank" class="icon github">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                    <a href="https://www.instagram.com/me_teja0905/" target="_blank" class="icon instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon facebook" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1lJhNgapGdMypuGD0S7ewUO1Cel-4fDDl?usp=drive_link" target="_blank" class="icon drive" title="Google Drive">
+                        <i class="fab fa-google-drive"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form-container fade-in">
+                <h3 class="form-title">Get In Touch</h3>
+                <form id="contactForm" action="mailto:tejavinayteju2004@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="complete.js"></script>
+</body>
+</html>
